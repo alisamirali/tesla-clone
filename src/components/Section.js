@@ -29,7 +29,6 @@ const Section = (props) => {
 };
 
 const Wrap = styled.div`
-  z-index: 10;
   width: 100vw;
   height: 100vh;
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
@@ -40,6 +39,7 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 `;
 
 const Text = styled.div`
@@ -95,6 +95,7 @@ const DownArrow = styled.img`
   height: 40px;
   overflow: hidden;
   animation: animationDown infinite 1.5s;
+  z-index: 10;
 `;
 
 export default Section;

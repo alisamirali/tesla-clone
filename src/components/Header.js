@@ -7,7 +7,7 @@ import { selectCars } from "../features/car/carSlice";
 import { useSelector } from "react-redux";
 
 const Header = () => {
-  const [burgerStatus, setBurgerStatus] = useState(false);
+  const [burgerStatus, setBurgerStatus] = useState(true);
   const cars = useSelector(selectCars);
 
   return (
@@ -103,6 +103,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  z-index: 1;
 `;
 
 const Menu = styled.div`
@@ -110,6 +111,7 @@ const Menu = styled.div`
   justify-content: center;
   align-items: center;
   flex: 1;
+  z-index: 100;
 
   a {
     font-weight: 600;
